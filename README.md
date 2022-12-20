@@ -3,6 +3,7 @@ Clean Architecture Essencial - ASP .NET Core com C# - Macoratti
 
 Comandos utilizados:
 
+```
 dotnet new sln --name CleanArchMvc
 dotnet new classlib --name CleanArchMvc.Domain
 dotnet new classlib --name CleanArchMvc.Application
@@ -22,3 +23,4 @@ dotnet add CleanArchMvc.Infra.IoC reference CleanArchMvc.Domain/CleanArchMvc.Dom
 dotnet add CleanArchMvc.Infra.IoC reference CleanArchMvc.Application/CleanArchMvc.Application.csproj
 dotnet add CleanArchMvc.Infra.IoC reference CleanArchMvc.Infra.Data/CleanArchMvc.Infra.Data.csproj
 dotnet add CleanArchMvc.WebUI reference CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj
+```
