@@ -1,11 +1,86 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "CleanArchMvc.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CleanArchMvc.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArchMvc.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchMvc.Application.dll": {}
+        }
+      },
+      "CleanArchMvc.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CleanArchMvc.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchMvc.Domain.dll": {}
+        }
+      },
+      "CleanArchMvc.Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CleanArchMvc.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArchMvc.Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchMvc.Infra.Data.dll": {}
+        }
+      },
+      "CleanArchMvc.Infra.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CleanArchMvc.Application": "1.0.0",
+          "CleanArchMvc.Domain": "1.0.0",
+          "CleanArchMvc.Infra.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArchMvc.Infra.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchMvc.Infra.IoC.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CleanArchMvc.Application/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchMvc.Application/CleanArchMvc.Application.csproj",
+      "msbuildProject": "../CleanArchMvc.Application/CleanArchMvc.Application.csproj"
+    },
+    "CleanArchMvc.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchMvc.Domain/CleanArchMvc.Domain.csproj",
+      "msbuildProject": "../CleanArchMvc.Domain/CleanArchMvc.Domain.csproj"
+    },
+    "CleanArchMvc.Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchMvc.Infra.Data/CleanArchMvc.Infra.Data.csproj",
+      "msbuildProject": "../CleanArchMvc.Infra.Data/CleanArchMvc.Infra.Data.csproj"
+    },
+    "CleanArchMvc.Infra.IoC/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj",
+      "msbuildProject": "../CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "CleanArchMvc.Infra.IoC >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/vscode/.nuget/packages/": {}
@@ -31,7 +106,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj": {
+              "projectPath": "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -32,7 +32,10 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-dotnettools.csharp",
-				"ms-mssql.mssql"
+				"ms-mssql.mssql",
+				"kreativ-software.csharpextensions",
+				"dracula-theme.theme-dracula",
+				"fernandoescolar.vscode-solution-explorer"
 			]
 		}
 	},
@@ -46,7 +49,7 @@
 	// }
 
 	// postCreateCommand.sh parameters: $1=SA password, $2=dacpac path, $3=sql script(s) path
-	"postCreateCommand": "bash .devcontainer/mssql/postCreateCommand.sh 'P@ssw0rd' './bin/Debug/' './.devcontainer/mssql/'",
+	"postCreateCommand": "bash .devcontainer/mssql/postCreateCommand.sh 'P@ssw0rd' './bin/Debug/' './.devcontainer/mssql/' && dotnet restore",
 	"features": {
 		"ghcr.io/devcontainers/features/dotnet:1": {}
 	}

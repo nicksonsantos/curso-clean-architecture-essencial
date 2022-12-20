@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WU0ii5ICfZNIKWqv/x2rmBDkHV7/XIAD8irtggYcVRXeBsvakNzIichwEa9NOF00D3E0J9kABS/88IbnGdxQsQ==",
+  "dgSpecHash": "+b/O6u2FD6vsIlasD0dwEz7YAcEmbDfHe36GkJ5ePbA6Zomuei/w4d1rw5yOO/3UwfILDqYMgv6/lQZmPfg/1A==",
   "success": true,
   "projectFilePath": "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.Application/CleanArchMvc.Application.csproj",
   "expectedPackageFiles": [],

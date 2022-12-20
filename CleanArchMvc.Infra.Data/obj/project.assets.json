@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "CleanArchMvc.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CleanArchMvc.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchMvc.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CleanArchMvc.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchMvc.Domain/CleanArchMvc.Domain.csproj",
+      "msbuildProject": "../CleanArchMvc.Domain/CleanArchMvc.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "CleanArchMvc.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/vscode/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.Domain/CleanArchMvc.Domain.csproj": {
+              "projectPath": "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.Domain/CleanArchMvc.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

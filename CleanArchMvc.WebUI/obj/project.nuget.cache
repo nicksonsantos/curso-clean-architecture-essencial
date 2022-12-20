@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+2JFpS8ZXVDkFGp6aG1tOArK93Y66+yePzrm64pooFnkSwZvYKpwe1b6rKOCJTRWTgwRdSQ0GFS3bCzDNZCGqg==",
+  "dgSpecHash": "FrRTDqEGfKGmaFlIPP9Xkv3RPBoETsPpE/aI3KFCeyDxKha6o/MZNi1Uy8s6CWBFOhSXhzCVPGQfWHz1IMil8Q==",
   "success": true,
   "projectFilePath": "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.WebUI/CleanArchMvc.WebUI.csproj",
   "expectedPackageFiles": [],
