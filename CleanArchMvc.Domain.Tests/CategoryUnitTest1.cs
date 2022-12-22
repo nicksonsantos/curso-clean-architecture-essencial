@@ -1,4 +1,3 @@
-using CleanArchMvc.Domain.Entities;
 
 namespace CleanArchMvc.Domain.Tests;
 
@@ -13,12 +12,12 @@ public class CategoryUnitTest1
     }
 
     [Fact]
-    public void CreateCategory_NegativeIdValue_DomainExceptionInvalid()
+    public void CreateCategory_NegativeIdValue_DomainExceptionInvalidId()
     {
         Action action = () => new Category(-1, "Category Name");
         action.Should()
             .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
-            .WithMessage("Invalid Id value");
+            .WithMessage("Invalid Id value.");
     }
 
     [Fact]
@@ -27,7 +26,7 @@ public class CategoryUnitTest1
         Action action = () => new Category(1, "");
         action.Should()
             .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
-            .WithMessage("Invalid name. Name is required");
+            .WithMessage("Invalid name. Name is required.");
     }
 
     [Fact]
@@ -36,7 +35,7 @@ public class CategoryUnitTest1
         Action action = () => new Category(1, "Ca");
         action.Should()
             .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
-            .WithMessage("Invalid name. Too short. Minimum 3 characters");
+            .WithMessage("Invalid name. Too short. Minimum 3 characters.");
     }
 
     [Fact]
