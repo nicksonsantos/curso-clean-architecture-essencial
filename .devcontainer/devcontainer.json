@@ -23,7 +23,7 @@
 						"user": "sa",
 						"password": "P@ssw0rd",
 						"emptyPasswordInput": false,
-						"savePassword": false,
+						"savePassword": true,
 						"profileName": "mssql-container"
 					}
 				]
