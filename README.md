@@ -30,4 +30,11 @@ cd CleanArchMvc.Domain.Tests
 dotnet add package FluentAssertions --version 6.8.0
 cd ..
 dotnet sln CleanArchMvc.sln add CleanArchMvc.Domain.Tests/CleanArchMvc.Domain.Tests.csproj
+
+dotnet tool install --global dotnet-ef
+cd CleanArchMvc.Infra.Data/
+dotnet add package Microsoft.EntityFrameworkCore.Design
+cd ..
+dotnet ef migrations add Inicial --project CleanArchMvc.Infra.Data -s CleanArchMvc.WebUI --verbose
+dotnet ef database update --project CleanArchMvc.Infra.Data --startup-project CleanArchMvc.WebUI --verbose
 ```

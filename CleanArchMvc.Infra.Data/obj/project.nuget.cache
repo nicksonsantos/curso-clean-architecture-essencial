@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q7Mye2y4om/5xYZ5VYgRIHoQ+psDQtNMB2M74gYJMnOkSp4CGOYo5XsY76GwBQTcry892btQWO6tnqg+M8bQgg==",
+  "dgSpecHash": "1bINMequTNz8SUsRSIgpY3zGiU+fDIQxtbwRlUJiGXMDacMMdr6+jEF6PvPA3EY/ZJIwMxRUIRbKK5XuUe5DIw==",
   "success": true,
   "projectFilePath": "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.Infra.Data/CleanArchMvc.Infra.Data.csproj",
   "expectedPackageFiles": [

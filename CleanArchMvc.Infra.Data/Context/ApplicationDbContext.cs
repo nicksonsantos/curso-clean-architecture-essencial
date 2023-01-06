@@ -5,6 +5,7 @@ namespace CleanArchMvc.Infra.Data
 {
     public class ApplicationDbContext : DbContext
     {
+        
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         { }
@@ -15,14 +16,14 @@ namespace CleanArchMvc.Infra.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            
+
             builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
 
             // com a linha acima evitamos ter que aplicar a configuracão para cada entidade
             // senao seria necessario utilizar:
             // builder.ApplyConfiguration(new CategoryConfiguration());
             // builder.ApplyConfiguration(new ProductConfiguration());
-            
+
         }
     }
 }
