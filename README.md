@@ -37,4 +37,8 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 cd ..
 dotnet ef migrations add Inicial --project CleanArchMvc.Infra.Data -s CleanArchMvc.WebUI --verbose
 dotnet ef database update --project CleanArchMvc.Infra.Data --startup-project CleanArchMvc.WebUI --verbose
+dotnet ef migrations add SeedProducts --project CleanArchMvc.Infra.Data -s CleanArchMvc.WebUI --verbose
+dotnet ef database update --project CleanArchMvc.Infra.Data --startup-project CleanArchMvc.WebUI --verbose
+
+dotnet add CleanArchMvc.Application/CleanArchMvc.Application.csproj package AutoMapper --version 12.0.0
 ```

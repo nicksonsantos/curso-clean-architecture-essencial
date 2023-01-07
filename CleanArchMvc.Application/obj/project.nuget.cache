@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+b/O6u2FD6vsIlasD0dwEz7YAcEmbDfHe36GkJ5ePbA6Zomuei/w4d1rw5yOO/3UwfILDqYMgv6/lQZmPfg/1A==",
+  "dgSpecHash": "uV+X4mE2v9UGhEH5PlWF/jYVS1vkc0t5VwVbiVNMBOpSevmGtMNxTSzr2bAcshep/4jxtzcw6LE/a7cgcyT/Pg==",
   "success": true,
   "projectFilePath": "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.Application/CleanArchMvc.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/vscode/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/home/vscode/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
