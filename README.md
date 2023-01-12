@@ -41,4 +41,5 @@ dotnet ef migrations add SeedProducts --project CleanArchMvc.Infra.Data -s Clean
 dotnet ef database update --project CleanArchMvc.Infra.Data --startup-project CleanArchMvc.WebUI --verbose
 
 dotnet add CleanArchMvc.Application/CleanArchMvc.Application.csproj package AutoMapper --version 12.0.0
+dotnet add CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj package AutoMapper.Extensions.Microsoft.DependencyInjection --version 12.0.0
 ```
