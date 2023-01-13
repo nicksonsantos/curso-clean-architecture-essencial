@@ -43,4 +43,5 @@ dotnet ef database update --project CleanArchMvc.Infra.Data --startup-project Cl
 dotnet add CleanArchMvc.Application/CleanArchMvc.Application.csproj package AutoMapper --version 12.0.0
 dotnet add CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj package AutoMapper.Extensions.Microsoft.DependencyInjection --version 12.0.0
 dotnet add CleanArchMvc.Application/CleanArchMvc.Application.csproj package MediatR --version 11.1.0
+dotnet add CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj package MediatR.Extensions.Microsoft.DependencyInjection --version 11.0.0
 ```

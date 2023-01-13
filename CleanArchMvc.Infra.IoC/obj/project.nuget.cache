@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PV+J+dYSiAoUCi43tIpJJ9bahK4iRf/JXzRt6xKP4nMXJsJGzlopee0KojzFkZofL0BAP3y4jAwdVPv2tPUFpA==",
+  "dgSpecHash": "ii9DW/I+t9UadjPa+Qp0LfFgfj+JBFd/q8USVa84c4Zl2PWo83F414dlrZfTKWOZmIMcKO05DTxIkosr1t/+IA==",
   "success": true,
   "projectFilePath": "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,9 @@
     "/home/vscode/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/home/vscode/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/home/vscode/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/vscode/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/home/vscode/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/home/vscode/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.data.sqlclient/5.0.1/microsoft.data.sqlclient.5.0.1.nupkg.sha512",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "w4gTvzD7Gx4xXvCwRIBRIMhoifpBIlYVprePh+uA6lXVH8NMIuUTBV3QgKe1bQMYI5X7FQ4RsqWB8UfMwBI0Og==",
+  "dgSpecHash": "4arYuA2E/zjgmpVo+gtkf7JQAPiRrbSeZZ3CMDvb3JwVP9tmH4QEMWYb9GSp9IuR9mFdPRrJ9LSJYogt8avXuQ==",
   "success": true,
   "projectFilePath": "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.WebUI/CleanArchMvc.WebUI.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,8 @@
     "/home/vscode/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/home/vscode/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/home/vscode/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/vscode/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/home/vscode/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.data.sqlclient/5.0.1/microsoft.data.sqlclient.5.0.1.nupkg.sha512",
