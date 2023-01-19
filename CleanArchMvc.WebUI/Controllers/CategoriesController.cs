@@ -10,7 +10,7 @@ public class CategoriesController : Controller
 
     public CategoriesController(ICategoryService categoryService)
     {
-        _categoryService = categoryService;        
+        _categoryService = categoryService;
     }
 
     [HttpGet]
@@ -62,11 +62,32 @@ public class CategoriesController : Controller
             }
             catch (Exception)
             {
-                
+
                 throw;
             }
             return RedirectToAction(nameof(Index));
         }
         return View(categoryDTO);
+    }
+
+    [HttpGet()]
+    public async Task<IActionResult> Delete(int? id)
+    {
+        if (id == null)
+            return NotFound();
+
+        var categoryDTO = await _categoryService.GetById(id);
+
+        if (categoryDTO == null)
+            return NotFound();
+
+        return View(categoryDTO);
+    }
+
+    [HttpPost(), ActionName("Delete")]
+    public async Task<IActionResult> DeleteConfirmed(int id)
+    {
+        await _categoryService.Remove(id);
+        return RedirectToAction(nameof(Index));
     }
 }
