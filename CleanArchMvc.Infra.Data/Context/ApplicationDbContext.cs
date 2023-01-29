@@ -1,29 +1,29 @@
 using CleanArchMvc.Domain.Entities;
+using CleanArchMvc.Infra.Data.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchMvc.Infra.Data
+namespace CleanArchMvc.Infra.Data;
+public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
-    public class ApplicationDbContext : DbContext
+
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        : base(options)
+    { }
+
+    public DbSet<Category> Categories { get; set; }
+    public DbSet<Product> Products { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder builder)
     {
-        
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
-        { }
+        base.OnModelCreating(builder);
 
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<Product> Products { get; set; }
+        builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
 
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);
+        // com a linha acima evitamos ter que aplicar a configuracão para cada entidade
+        // senao seria necessario utilizar:
+        // builder.ApplyConfiguration(new CategoryConfiguration());
+        // builder.ApplyConfiguration(new ProductConfiguration());
 
-            builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
-
-            // com a linha acima evitamos ter que aplicar a configuracão para cada entidade
-            // senao seria necessario utilizar:
-            // builder.ApplyConfiguration(new CategoryConfiguration());
-            // builder.ApplyConfiguration(new ProductConfiguration());
-
-        }
     }
 }
