@@ -45,4 +45,8 @@ dotnet add CleanArchMvc.Infra.Data/CleanArchMvc.Infra.Data.csproj package Micros
 dotnet add CleanArchMvc.Infra.Data/CleanArchMvc.Infra.Data.csproj package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 6.0.13
 dotnet ef migrations add AddIdentityTables --project CleanArchMvc.Infra.Data -s CleanArchMvc.WebUI --verbose
 dotnet ef database update --project CleanArchMvc.Infra.Data --startup-project CleanArchMvc.WebUI --verbose
+
+dotnet new "webapi" -lang "C#" -n "CleanArchMvc.API" -o "CleanArchMvc.API"
+dotnet sln "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.sln" add "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.API/CleanArchMvc.API.csproj"
+dotnet add CleanArchMvc.API reference CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj
 ```
