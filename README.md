@@ -49,4 +49,9 @@ dotnet ef database update --project CleanArchMvc.Infra.Data --startup-project Cl
 dotnet new "webapi" -lang "C#" -n "CleanArchMvc.API" -o "CleanArchMvc.API"
 dotnet sln "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.sln" add "/workspaces/curso-clean-architecture-essencial/CleanArchMvc.API/CleanArchMvc.API.csproj"
 dotnet add CleanArchMvc.API reference CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj
+
+dotnet add CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj package Microsoft.AspNetCore.Authentication.JwtBearer --version 6.0.13
+dotnet add CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj package Swashbuckle.AspNetCore.Swagger --version 6.5.0
+dotnet add CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj package Swashbuckle.AspNetCore.SwaggerGen --version 6.5.0
+dotnet add CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj package Swashbuckle.AspNetCore.SwaggerUI --version 6.5.0
 ```
